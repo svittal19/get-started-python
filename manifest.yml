@@ -1,5 +1,6 @@
 ---
 applications:
- - name: GetStartedPython
+ - name: ShwethaCFStartingPython
+   buildpack: python_buildpack
    random-route: true
    memory: 128M
