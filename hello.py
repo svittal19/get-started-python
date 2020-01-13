@@ -51,6 +51,7 @@ def root():
 @app.route('/api/visitors', methods=['GET'])
 def get_visitor():
     if client:
+        print('Going to pick visitor info from database')
         return jsonify(list(map(lambda doc: doc['name'], db)))
     else:
         print('No database')
